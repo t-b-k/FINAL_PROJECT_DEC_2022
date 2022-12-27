@@ -1,0 +1,15 @@
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\bin\Debug\net6.0\Final_Homework_December_2022.exe
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\bin\Debug\net6.0\Final_Homework_December_2022.deps.json
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\bin\Debug\net6.0\Final_Homework_December_2022.runtimeconfig.json
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\bin\Debug\net6.0\Final_Homework_December_2022.dll
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\bin\Debug\net6.0\Final_Homework_December_2022.pdb
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.csproj.AssemblyReference.cache
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.AssemblyInfoInputs.cache
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.AssemblyInfo.cs
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.csproj.CoreCompileInputs.cache
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.dll
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\refint\Final_Homework_December_2022.dll
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.pdb
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\Final_Homework_December_2022.genruntimeconfig.cache
+C:\Users\Татьяна Калашникова\Desktop\C#\FINAL_PROJECT_DEC_2022\Final_Homework_December_2022\obj\Debug\net6.0\ref\Final_Homework_December_2022.dll
