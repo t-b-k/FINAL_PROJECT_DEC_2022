@@ -7,14 +7,14 @@ using static Common.Helper;
 
 Random random = new Random();
 
-int arrayLength = random.Next(2, 11);
+int minSizeOfArray = 2; 
+int maxSizeOfArray = 10; 
+
+int arrayLength = random.Next(minSizeOfArray, maxSizeOfArray+1);
 
 uint numberOfSymbols = 3;
 
-// Каждый этап программы при выводе на экран будем оформлять шрифтами 
-// разного цвета для удобства восприятия пользователем
-
-// Блок ввода пользователем массива строк
+// Ввод исходных данных
 
 Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine($"\nВведите {arrayLength} строк. \n");
@@ -51,8 +51,7 @@ Console.WriteLine("\nВот какой массив Вы ввели: \n");
 PrintArrayOfStrings(array, ",");
 Console.WriteLine();
 
-// Посчитаем в нем строки, длина которых не превосходит значения переменной numberOfSymbols
-// и выведем результат на экран
+// Основной блок: решение поставленной задачи и вывод результата
 
 Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine("РЕЗУЛЬТАТ:");
