@@ -47,22 +47,34 @@ for (int i = 0; i < arrayLength; i++)
     }
 }
 
-bool InputString(string invit, out string nextString)
+
+
+// bool InputString(string invit, out string nextString)
+// {
+//     Console.Write(invit);
+
+//     string? inputStr = Console.ReadLine();
+//     bool isStrNullOrEmpty = String.IsNullOrEmpty(inputStr);
+//     if (isStrNullOrEmpty)
+//     {
+//         nextString = String.Empty;
+//     }
+//     else
+//     {
+//         nextString = inputStr;
+//     }
+//     return !isStrNullOrEmpty;
+// }
+
+void PrintArrayOfStrings(string[] arr, string separator)
 {
-    Console.Write(invit);
-
-    string? inputStr = Console.ReadLine();
-    bool isStrNullOrEmpty = String.IsNullOrEmpty(inputStr);
-    if (isStrNullOrEmpty)
+    int i = 0;
+    Console.Write("[");
+    for (; i < arr.Length - 1; i++)
     {
-        nextString = String.Empty;
+        Console.Write("{0}{1}{2}", "\"", arr[i], "\"");
+        Console.Write(separator);
     }
-    else
-    {
-        nextString = inputStr;
-    }
-    return !isStrNullOrEmpty;
+    Console.WriteLine("{0}{1}{2}{3}", "\"", arr[i], "\"", "]");
 }
-
-
 
