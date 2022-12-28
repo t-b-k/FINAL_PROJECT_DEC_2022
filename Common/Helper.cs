@@ -100,6 +100,25 @@ public static class Helper
         && lowValue < upValue;
     }
 
+    // Метод ввода строки пользователем после соответствующего приглашения в окне консоли. 
+    // Возвращает true, если введена непустая строка, и пользователь не нажал Ctrl+Z.
+    public static bool InputString(string invit, out string nextString)
+    {
+        Console.Write(invit);
+
+        string? inputStr = Console.ReadLine();
+        bool isStrNullOrEmpty = String.IsNullOrEmpty(inputStr);
+        if (isStrNullOrEmpty)
+        {
+            nextString = String.Empty;
+        }
+        else
+        {
+            nextString = inputStr;
+        }
+        return !isStrNullOrEmpty;
+    }
+
     // ***************************************************************************
     // Методы вывода информации на экран
     // ***************************************************************************
