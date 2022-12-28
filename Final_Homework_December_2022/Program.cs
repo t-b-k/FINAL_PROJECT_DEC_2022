@@ -70,7 +70,7 @@ if (resultArray == null)
 else
 {
     Console.WriteLine("{0} {1}", "\tСреди введенных Вами строк",
-                    $"{resultArray.Length} строк(и) длиной не более {numberOfSymbols} символ(а)(ов).");
+                    $"{resultArray.Length} строк(а)(и) длиной не более {numberOfSymbols} символ(а)(ов).");
     Console.WriteLine("\tВот результирующий массив: \n");
     Console.Write("\t");
     PrintArrayOfStrings(resultArray, ", ");
