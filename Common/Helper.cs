@@ -261,7 +261,7 @@ public static class Helper
         }
         Console.WriteLine("{0}{1}{2}{3}", "\"", arr[i], "\"", "]");
     }
-    
+
     // ***************************************************************************
     // Методы создания массивов случайных чисел
     // ***************************************************************************
@@ -518,4 +518,18 @@ public static class Helper
         return result;
     }
 
+    // Метод подсчитывает в массиве строк количество строк, 
+    // длина которых не превышает заданную в параметре length.
+    public static int QtyOfStringsNotLongerThan(string[] arr, uint length)
+    {
+        int qtyOfStrings = 0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i].Length <= length)
+            {
+                qtyOfStrings = qtyOfStrings + 1;
+            }
+        }
+        return qtyOfStrings;
+    }
 }

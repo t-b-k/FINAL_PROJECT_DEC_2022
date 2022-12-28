@@ -66,15 +66,28 @@ for (int i = 0; i < arrayLength; i++)
 //     return !isStrNullOrEmpty;
 // }
 
-void PrintArrayOfStrings(string[] arr, string separator)
-{
-    int i = 0;
-    Console.Write("[");
-    for (; i < arr.Length - 1; i++)
-    {
-        Console.Write("{0}{1}{2}", "\"", arr[i], "\"");
-        Console.Write(separator);
-    }
-    Console.WriteLine("{0}{1}{2}{3}", "\"", arr[i], "\"", "]");
-}
+// void PrintArrayOfStrings(string[] arr, string separator)
+// {
+//     int i = 0;
+//     Console.Write("[");
+//     for (; i < arr.Length - 1; i++)
+//     {
+//         Console.Write("{0}{1}{2}", "\"", arr[i], "\"");
+//         Console.Write(separator);
+//     }
+//     Console.WriteLine("{0}{1}{2}{3}", "\"", arr[i], "\"", "]");
+// }
+
+// int QtyOfStringsNotLongerThan (string[] arr, uint length)
+// {
+//     int qtyOfStrings = 0;
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         if (arr[i].Length <= length)
+//         {
+//             qtyOfStrings = qtyOfStrings + 1;
+//         }
+//     }
+//     return qtyOfStrings;
+// }
 
