@@ -3,15 +3,11 @@
 
 using static Common.Helper;
 
-// Длину массива будем формировать случайным образом путем генерации случайных чисел 
-// из диапазона [2;10]
+// Длина массива получается случайным образом из диапазона [2;10]
 
 Random random = new Random();
 
 int arrayLength = random.Next(2, 11);
-
-// Максимальную длину интересующих нас строк оформим в виде переменной, 
-// чтобы программу легко было подстраивать под другие исходные данные
 
 uint numberOfSymbols = 3;
 
@@ -47,7 +43,46 @@ for (int i = 0; i < arrayLength; i++)
     }
 }
 
+// Покажем пользователю, какой массив он нам задал: 
 
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("\nВот какой массив Вы ввели: \n");
+
+PrintArrayOfStrings(array, ",");
+Console.WriteLine();
+
+// Посчитаем в нем строки, длина которых не превосходит значения переменной numberOfSymbols
+// и выведем результат на экран
+
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine("РЕЗУЛЬТАТ:");
+
+string[] resultArray = GetStringsNotLongerThan (array, numberOfSymbols); 
+
+Console.ForegroundColor = ConsoleColor.Yellow;
+
+if (resultArray == null) 
+{
+    Console.WriteLine("{0} {1}", "\tСреди введенных Вами строк",
+                        $"нет строк длиной не более {numberOfSymbols} символ(а)(ов). \n");
+    Console.ResetColor();
+    return;
+}
+else
+{
+    Console.WriteLine("{0} {1}", "\tСреди введенных Вами строк",
+                    $"{resultArray.Length} строк(и) длиной не более {numberOfSymbols} символ(а)(ов).");
+    Console.WriteLine("\tВот результирующий массив: \n");
+    Console.Write("\t");
+    PrintArrayOfStrings(resultArray, ", ");
+}
+
+Console.WriteLine();
+Console.ResetColor();
+
+// Ниже для справки в комментариях приведены используемые методы (исключительно 
+// для удобства проверки). Считайте, что их здесь нет. 
+// Они все залиты в файл ..Common\Helper.cs
 
 // bool InputString(string invit, out string nextString)
 // {
