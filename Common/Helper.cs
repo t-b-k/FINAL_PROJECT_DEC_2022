@@ -540,10 +540,14 @@ public static class Helper
     {
         int resultArrayLength = QtyOfStringsNotLongerThan(arr, maxLength);
 
-        if (resultArrayLength == 0) return null;
+        if (resultArrayLength == 0) 
+        {
+            return null; 
+        }
         else
         {
             string[] resultArray = new string[resultArrayLength];
+
             for (int i = 0, j = 0; i < arr.Length; i++)
             {
                 if (arr[i].Length <= maxLength)
