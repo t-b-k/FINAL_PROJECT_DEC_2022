@@ -532,4 +532,27 @@ public static class Helper
         }
         return qtyOfStrings;
     }
+
+    // Метод по заданному массиву строк формирует массив, в который 
+    // копируются только те строки, длина которых не превосходит заданной 
+    // в параметре maxLength
+    public static string[] GetStringsNotLongerThan(string[] arr, uint maxLength)
+    {
+        int resultArrayLength = QtyOfStringsNotLongerThan(arr, maxLength);
+
+        if (resultArrayLength == 0) return null;
+        else
+        {
+            string[] resultArray = new string[resultArrayLength];
+            for (int i = 0, j = 0; i < arr.Length; i++)
+            {
+                if (arr[i].Length <= maxLength)
+                {
+                    resultArray[j] = arr[i];
+                    j++;
+                }
+            }
+            return resultArray;
+        }
+    }
 }

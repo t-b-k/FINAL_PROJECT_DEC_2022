@@ -91,3 +91,22 @@ for (int i = 0; i < arrayLength; i++)
 //     return qtyOfStrings;
 // }
 
+// string[] GetStringsNotLongerThan(string[] arr, uint maxLength)
+// {
+//     int resultArrayLength = QtyOfStringsNotLongerThan(arr, maxLength);
+
+//     if (resultArrayLength == 0) return null;
+//     else
+//     {
+//         string[] resultArray = new string[resultArrayLength];
+//         for (int i = 0, j = 0; i < arr.Length; i++)
+//         {
+//             if (arr[i].Length <= maxLength)
+//             {
+//                 resultArray[j] = arr[i];
+//                 j++;
+//             }
+//         }
+//         return resultArray; 
+//     }
+// }
