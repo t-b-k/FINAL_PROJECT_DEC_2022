@@ -518,7 +518,7 @@ public static class Helper
         return result;
     }
 
-    // Метод подсчитывает в массиве строк количество строк, 
+// Метод подсчитывает в массиве строк количество строк, 
     // длина которых не превышает заданную в параметре length.
     public static int QtyOfStringsNotLongerThan(string[] arr, uint length)
     {
@@ -540,14 +540,10 @@ public static class Helper
     {
         int resultArrayLength = QtyOfStringsNotLongerThan(arr, maxLength);
 
-        if (resultArrayLength == 0) 
-        {
-            return null; 
-        }
-        else
-        {
-            string[] resultArray = new string[resultArrayLength];
+        string[] resultArray = new string[resultArrayLength];
 
+        if (resultArrayLength != 0)
+        {
             for (int i = 0, j = 0; i < arr.Length; i++)
             {
                 if (arr[i].Length <= maxLength)
@@ -556,7 +552,7 @@ public static class Helper
                     j++;
                 }
             }
-            return resultArray;
         }
+        return resultArray;
     }
 }

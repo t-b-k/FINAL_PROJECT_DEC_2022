@@ -60,7 +60,7 @@ string[] resultArray = GetStringsNotLongerThan (array, numberOfSymbols);
 
 Console.ForegroundColor = ConsoleColor.Yellow;
 
-if (resultArray == null) 
+if (resultArray.Length == 0)  
 {
     Console.WriteLine("{0} {1}", "\tСреди введенных Вами строк",
                         $"нет строк длиной не более {numberOfSymbols} символ(а)(ов). \n");
